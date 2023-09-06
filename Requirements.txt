@@ -1,2 +1,2 @@
-Streamlit
-Tensorflow
+streamlit
+tensorflow
