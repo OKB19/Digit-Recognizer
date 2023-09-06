@@ -4,7 +4,7 @@ from tensorflow.keras.models import load_model
 
 from PIL import Image
 import numpy as np
-st.title("Sports Image Classification")
+st.title("Digit-recognition Images")
 
 st.write("Predict the sport that is being represented in the image.")
 
