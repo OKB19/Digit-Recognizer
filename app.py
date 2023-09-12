@@ -38,7 +38,7 @@ uploaded_file = st.file_uploader(
 )
 predictions=-1
 if uploaded_file is not None:
-    image1 = Image.open(uploaded_file)
+    image1 = Image.open("/content/mnist.JPG")
     image1=image.smart_resize(image1,(28,28))
     img_array = image.img_to_array(image1)
     img_array = np.expand_dims(img_array, axis=0)
@@ -50,7 +50,7 @@ if uploaded_file is not None:
 st.write("### Prediction Result")
 if st.button("Predict"):
     if uploaded_file is not None:
-        image1 = Image.open(uploaded_file)
+        image1 = Image.open("/content/mnist.JPG")
         st.image(image1, caption="Uploaded Image", use_column_width=True)
         st.markdown(
             f"<h2 style='text-align: center;'>Image of {label}</h2>",
