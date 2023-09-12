@@ -1,3 +1,4 @@
+!pip install streamlit
 import streamlit as st
 from tensorflow.keras.preprocessing import image
 from tensorflow.keras.models import load_model
