@@ -8,7 +8,7 @@ st.title("Digit-recognition Images")
 
 st.write("Predict the sport that is being represented in the image.")
 
-model = load_model(".model.h5")
+model = load_model("model.h5")
 labels = {
         0: '0',
         1: '1',
